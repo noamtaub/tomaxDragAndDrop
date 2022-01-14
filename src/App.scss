@@ -1,0 +1,151 @@
+.App {
+  text-align: center;
+  width: 80rem;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.pictures {
+  margin: 10px;
+  height: 31rem;
+  overflow: scroll;
+}
+img {
+  margin: 5px;
+}
+
+.board {
+  width: 300px;
+  height: 500px;
+  border: 2px solid black;
+
+}
+.image-in-board {
+  resize: both;
+  overflow: auto;
+  display: inline-block;
+  max-height: 20rem;
+  //img{
+  //  width: inherit;
+  //  max-height: -webkit-fill-available;
+  //}
+}
+.users-frame{
+  padding: 2rem;
+  border: 2px solid black;
+  display: flex;
+  width: 80%;
+  flex: 1 1 80%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.stage{
+  background-image: url("https://image.freepik.com/free-photo/boatman-punting-boat-river-arashiyama-autumn-season-along-river-kyoto-japan_335224-22.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 39rem;
+  height: 26rem;
+  //display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: relative;
+}
+.download{
+  margin-top: 2rem;
+  background: green;
+  padding: 1rem;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: 3rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.picture-in-list{
+  border: 1px solid black;
+  padding: 1rem;
+  margin-top: 1rem;
+  &:nth-child(1){
+    margin-top: 0;
+  }
+  img{
+    width: 7rem;
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+  }
+}
+.dragging{
+  border: 3px solid red;
+  cursor: grabbing !important;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+  &.hover{
+    border: 3px solid lightgreen;
+  }
+}
+
+
+
+
+
+
+
+/*.page{*/
+/*    height: 100vh;*/
+/*    background-color: antiquewhite;*/
+/*    text-align: center;*/
+/*}*/
+/*.container{*/
+/*    padding: 3rem;*/
+/*    max-width: 90rem;*/
+/*    margin: 0 auto;*/
+/*}*/
+/*.users-frame{*/
+/*    padding: 2rem;*/
+/*    border: 2px solid black;*/
+/*    color: red;*/
+/*    display: flex;*/
+/*    width: 80%;*/
+/*    flex: 1 1 80%;*/
+/*    justify-content: space-between;*/
+/*    margin: 0 auto;*/
+/*}*/
+/*.users-list{*/
+/*    width: 30%;*/
+
+/*}*/
+/*.user-wrapper:nth-child(1){*/
+/*    margin-top: 0;*/
+/*}*/
+/*.user-wrapper{*/
+/*    border: 1px solid black;*/
+/*    margin-top: 1rem;*/
+/*}*/
+/*.stage{*/
+/*    background-image: url("https://image.freepik.com/free-photo/boatman-punting-boat-river-arashiyama-autumn-season-along-river-kyoto-japan_335224-22.jpg");*/
+/*    background-position: left;*/
+/*    background-repeat: no-repeat;*/
+/*    width: 39rem;*/
+/*    height: 26rem;*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    justify-content: space-evenly;*/
+/*}*/
+/*.user-image{*/
+/*    padding: 1rem;*/
+/*}*/
+/*.user-image:hover{*/
+/*    cursor: grab;*/
+/*}*/
+/*.empty{*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*}*/
+/*button{*/
+/*    margin-top: 2rem;*/
+/*}*/
+/*.empty .fill .user-image{*/
+/*    padding: 0;*/
+/*}*/
