@@ -1,7 +1,6 @@
 import Picture from "./Picture";
 import React, {useRef, useState} from "react";
 import {useDrag} from 'react-use-gesture'
-import DragResizeContainer from 'react-drag-resize';
 
 export const PictureInStage = (props) => {
     const [{xy}, setXY] = useState({xy: [0, 0]})
